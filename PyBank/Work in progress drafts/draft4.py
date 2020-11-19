@@ -51,7 +51,7 @@ print(f'-----------------------------')
 print(f'Total Months: {month_count}')
 print(f'Total: ${sum_total_profitlosses}')
 #prints the average change profit loss by rounding the number and leaving to digits to the right of decimal
-# divides new list created by number of items in the list of change_list_profitlosses
+# divides new list created by 
 print(f'Average Change: ${round(sum(change_list_profitlosses)/len(change_list_profitlosses),2)}')
 print(f'Greatest Increase in Profits: ')
 print(f'Greatest Decrease in Profits: ')
