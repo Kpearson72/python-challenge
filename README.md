@@ -1,3 +1,4 @@
-#**Python-Challenge**
-###Python Homework - Py Me Up, Charlie
+<p align="center">
+   #**Python-Challenge**\
+##Python Homework - Py Me Up, Charlie\
 ![revenue](Images/revenue-per-lead.png)

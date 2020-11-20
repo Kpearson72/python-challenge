@@ -3,7 +3,7 @@ import csv
 
 file_name = "PyBank/Resources/budget_data.csv"
 csv_file = open(file_name)
-#using a dictionary reader to read the csv and signing it to a variable
+#using a dictionary reader to read the csv and assigning it to a variable
 csv_reader = csv.DictReader(csv_file)
 
 #setting variables 
