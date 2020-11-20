@@ -6,11 +6,7 @@ csv_file = open(file_name)
 #using a dictionary reader to read the csv and signing it to a variable
 csv_reader = csv.DictReader(csv_file)
 
-#next(csv_reader) #skipping header
-
-# COUNTING TOTAL MONTHS
-#setting variable for month count, net total profit/loss
-
+#setting variables 
 month_count = 0
 sum_total_profitlosses = 0
 previous_profitlosses = 0
@@ -44,7 +40,7 @@ for line in csv_reader:
 # CALCULATING CHANGES IN PROFIT/LOSSES FOR ENTIRE TIME - THEN FINDING AVERAGE OF CHANGES
     #subtracts the integer number of profit/loss to the one previous to it
     change_profitloss = int(line["Profit/Losses"]) - previous_profitlosses
-    #creating a new list and adds to list of profitlosses
+    #adds to list of profitlosses
     change_list_profitlosses.append(change_profitloss)
     #overrides the previous profit/loss
     previous_profitlosses = int(line["Profit/Losses"])
@@ -72,7 +68,17 @@ print(f'Average Change: ${round(sum(change_list_profitlosses)/len(change_list_pr
 print(f'Greatest Increase in Profits: {change_month[greatest_inc_month]} (${(str(greatest_inc))})')
 print(f'Greatest Decrease in Profits: {change_month[greatest_dec_month]} (${(str(greatest_dec))})')
 
+#write a text file named analysis.txt
 
+g = open('analysis.txt', 'w+')
+g.write(f'Financial Analysis \n')
+g.write(f'----------------------------- \n')
+g.write(f'Total Months: {month_count} \n')
+g.write(f'Total: ${sum_total_profitlosses} \n')
+g.write(f'Average Change: ${round(sum(change_list_profitlosses)/len(change_list_profitlosses),2)}) \n')
+g.write(f'Greatest Increase in Profits: {change_month[greatest_inc_month]} (${(str(greatest_inc))}) \n')
+g.write(f'Greatest Decrease in Profits: {change_month[greatest_dec_month]} (${(str(greatest_dec))}) \n')
+g.close()
 
 
 
