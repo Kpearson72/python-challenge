@@ -5,7 +5,7 @@
 
 ### This project consists of two Python challenges that have real-world situations: PyBank and PyPoll.   
 
-#### Before beginning, a repository, named "python-challenge",  had to be created and cloned to my local computer. Within the repository, two main directories were created (PyBank and PyPoll), each containing folders: Resource and analysis. The Resource folder had to have a csv file that is paticular to the assignment. The analysis folder will hold the final .txt file with the results. Lastly, the final product of my endeavour was having a main.py file which contained the solved Python script.
+#### Before beginning, a repository named "python-challenge" had to be created and cloned to my local computer. Within the repository, two main directories were created (PyBank and PyPoll), each containing folders: Resource and analysis. The Resource folder had to have a csv file that is paticular to the assignment. The analysis folder will hold the final .txt file with the results. Lastly, the final product of my endeavour was having a main.py file which contained the solved Python script!
 
 ----------------------------------------------------------------------------------
 
